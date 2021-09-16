@@ -16,3 +16,7 @@ Paramêtros:
 | -------- | ------------- | ---------- | --------- | --------- |
 | search | str | null | Sim | Pergunta |
 | lang | str | null | Sim | Linguagem da pesquisa |
+
+Exemplo:
+
+| `/api/v1/search=Google&lang=pt` | GET
