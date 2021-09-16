@@ -19,4 +19,4 @@ Paramêtros:
 
 Exemplo:
 
-| `/api/v1/search=Google&lang=pt` | GET
+| `/api/v1/search=Google&lang=pt` | GET |
