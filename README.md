@@ -15,4 +15,4 @@ Paramêtros:
 | Parâmetro | Tipo de valor | Default | Obrigatório | Descrição |
 | -------- | ------------- | ---------- | --------- | --------- |
 | search | str | null | Sim | Pergunta |
-| lang | str | pt | Sim | Linguagem da pesquisa |
+| lang | str | null | Sim | Linguagem da pesquisa |
