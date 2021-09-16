@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, jsonify
 import wikipedia
 
 app = Flask(__name__)
@@ -7,7 +7,7 @@ app = Flask(__name__)
 def home(search, lang):
         wikipedia.set_lang(f"{lang}")
         result = wikipedia.summary(search, sentences = 4)
-        return f"{result}"
+        return jsonify({ "data": result })
 
 if __name__ == "__main__":
     app.run()        
