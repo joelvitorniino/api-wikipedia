@@ -10,4 +10,4 @@ def home(search, lang):
         return f"{result}"
 
 if __name__ == "__main__":
-    app.run(debug=True)        
+    app.run()        
