@@ -16,5 +16,9 @@ def home(search, lang):
 def not_found(e):
     return jsonify({"data": "Pesquisa não encontrada, por favor tente com outro nome parecido." })
 
+@app.errorhandler(500)
+def error_found(e):
+    return jsonify({"data": "Pesquisa não encontrada, por favor tente com outro nome parecido." })
+
 if __name__ == "__main__":
     app.run()
