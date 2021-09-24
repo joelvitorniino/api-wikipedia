@@ -11,6 +11,9 @@ def home(search, lang):
        return jsonify({"data": result})
     except wikipedia.DisambiguationError:
         return jsonify({"data": "Pesquisa não encontrada, por favor tente com outro nome parecido." })      
+@app.errorhandler(400)
+def not_foundError400(e):
+    return jsonify({"data": "Pesquisa não encontrada, por favor tente com outro nome parecido." })
 
 @app.errorhandler(404)
 def not_found(e):
